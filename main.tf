@@ -22,9 +22,10 @@ module "lambda" {
     lambda_courses_role_arn = module.iam.table_courses_role_arn
 
     name_get_course = "get-course"
-    name_save_course = "save-course"
+    
     name_update_course = "update-course"
     name_delete_course = "delete-course"
+      name_save_course = "save-course"
 }
 
 module "iam" {
