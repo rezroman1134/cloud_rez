@@ -3,7 +3,7 @@ module "cdn" {
   version = "3.2.1"
 #   aliases = ["cdn.example.com"]
   default_root_object = "index.html"
-  comment             = "My awesome CloudFront"
+  comment             = "CloudFront"
   enabled             = true
 #   is_ipv6_enabled     = true
   price_class         = "PriceClass_100"
@@ -12,7 +12,7 @@ module "cdn" {
 
   create_origin_access_identity = true
   origin_access_identities = {
-    s3_bucket_one = "My awesome CloudFront can access"
+    s3_bucket_one = "CloudFront can access"
   }
 
 #   logging_config = {
